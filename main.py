@@ -1286,7 +1286,7 @@ if __name__ == '__main__':
 
     # Filter menu options
     filter_menu = tkinter.Menu(menubar, tearoff=False)
-    for item in ["Cartoon", "InkPainting", "WaterColor", "OilPainting", "PencilSketch", "Cyberpunk",
+    for item in ["Cartoon", "InkPainting", "WaterColour", "OilPainting", "PencilSketch", "Cyberpunk",
                  "OldPhoto", "Popart"]:
         if item == "Cartoon":
             filter_menu.add_command(label=item, command=CB)
@@ -1295,7 +1295,7 @@ if __name__ == '__main__':
             Ink_menu.add_command(label=item + "_RGB", command=img2ink)
             Ink_menu.add_command(label=item + "_GRAY", command=img2ink_gray)
             filter_menu.add_cascade(label=item, menu=Ink_menu)
-        elif item == "WaterColor":
+        elif item == "WaterColour":
             filter_menu.add_command(label=item, command=img_watercolour)
         elif item == "OilPainting":
             filter_menu.add_command(label=item, command=img_oilPainting)
@@ -1343,7 +1343,7 @@ if __name__ == '__main__':
     # d = {"Mix": lambda: placeItem("Mix")}
     # for i in d:
     #     tool_menu.add_command(label=i, command=d[i])
-    for item in ["Mix", "Slice", "illumination", "Colorful", "Sky_Trans", "GetForeground", "ColorTrans", "Pixelate",
+    for item in ["Mix", "Slice", "illumination", "Colourful", "Sky_Trans", "GetForeground", "ColourTrans", "Pixelate",
                  "Lego", "Hearts", "MineCraft",
                  "Glasgow"]:
         if item == "Mix":
@@ -1352,9 +1352,9 @@ if __name__ == '__main__':
             tool_menu.add_command(label=item, command=img_slice)
         elif item == "illumination":
             tool_menu.add_command(label=item, command=img_lightning)
-        elif item == "Colorful":
+        elif item == "Colourful":
             tool_menu.add_command(label=item, command=img_auto_colorful)
-        elif item == "ColorTrans":
+        elif item == "ColourTrans":
             tool_menu.add_command(label=item, command=img_color_transfer)
             tool_menu.add_separator()
         elif item == "GetForeground":
